@@ -13,10 +13,10 @@
     <script>
         $(document).ready(function() {
            
-            $("#pageLoad").animateNumbers(4321, true, 2000);
+            $("#pageLoad").animateNumbers(4321, true);
             
             $("#clickEvent").on("click", function() {
-                $(this).animateNumbers(1234, false);
+                $(this).animateNumbers(1234.56, false, 3000, "swing", 2);
             });
             
         });
@@ -30,7 +30,7 @@
     </div>
     <div>
         <p>This number will animate on click:</p>
-        <div id="clickEvent">4321</div>
+        <div id="clickEvent">4321.00</div>
     </div>
 
 </body>
